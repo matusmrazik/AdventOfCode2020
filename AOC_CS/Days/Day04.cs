@@ -7,7 +7,7 @@ namespace AOC_CS.Days
 {
     class Day04
     {
-        const string INPUT_FILE = "Inputs\\day04.txt";
+        const string INPUT_FILE = "Inputs/day04.txt";
 
         private string[] passports;
 

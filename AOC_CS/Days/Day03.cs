@@ -4,7 +4,7 @@ namespace AOC_CS.Days
 {
     class Day03
     {
-        const string INPUT_FILE = "Inputs\\day03.txt";
+        const string INPUT_FILE = "Inputs/day03.txt";
 
         private string[] map;
 

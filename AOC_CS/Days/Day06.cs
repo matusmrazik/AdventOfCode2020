@@ -6,7 +6,7 @@ namespace AOC_CS.Days
 {
     class Day06
     {
-        const string INPUT_FILE = "Inputs\\day06.txt";
+        const string INPUT_FILE = "Inputs/day06.txt";
 
         private string[] groups;
 

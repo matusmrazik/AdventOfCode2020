@@ -7,7 +7,7 @@ namespace AOC_CS.Days
 {
     class Day07
     {
-        const string INPUT_FILE = "Inputs\\day07.txt";
+        const string INPUT_FILE = "Inputs/day07.txt";
 
         private Dictionary<string, Dictionary<string, int>> graphBck;
         private Dictionary<string, Dictionary<string, int>> graphFwd;

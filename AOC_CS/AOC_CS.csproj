@@ -6,13 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Days\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ContentWithTargetPath Include="..\Inputs\*.txt">
+    <ContentWithTargetPath Include="../Inputs/*.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <TargetPath>Inputs\%(Filename)%(Extension)</TargetPath>
+      <TargetPath>Inputs/%(Filename)%(Extension)</TargetPath>
     </ContentWithTargetPath>
   </ItemGroup>
 
