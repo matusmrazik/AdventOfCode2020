@@ -1,5 +1,5 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -59,9 +59,7 @@ namespace AOC_CPP::Day08
         int param;
         std::ifstream infile(INPUT_FILE);
         while (infile >> op >> param)
-        {
             program.emplace_back(op, param);
-        }
         infile.close();
     }
 
@@ -77,8 +75,7 @@ namespace AOC_CPP::Day08
         for (auto line = 0; line < nCommands; ++line)
         {
             const auto [ok, acc] = run_program(line);
-            if (ok)
-                return acc;
+            if (ok) return acc;
         }
         return 0;
     }
