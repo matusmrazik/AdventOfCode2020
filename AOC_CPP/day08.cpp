@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -54,10 +55,12 @@ namespace AOC_CPP::Day08
 
     void read_input()
     {
+        using namespace std::string_literals;
         program.clear();
         std::string op;
         int param;
         std::ifstream infile(INPUT_FILE);
+        if (!infile) throw std::runtime_error("File \""s + INPUT_FILE + "\" not found");
         while (infile >> op >> param)
             program.emplace_back(op, param);
         infile.close();

@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <set>
+#include <stdexcept>
 #include <vector>
 
 namespace AOC_CPP::Day09
@@ -16,9 +17,11 @@ namespace AOC_CPP::Day09
 
     void read_input()
     {
+        using namespace std::string_literals;
         inputs.clear();
         IntType n;
         std::ifstream infile(INPUT_FILE);
+        if (!infile) throw std::runtime_error("File \""s + INPUT_FILE + "\" not found");
         while (infile >> n)
             inputs.push_back(n);
         infile.close();
